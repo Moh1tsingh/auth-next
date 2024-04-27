@@ -16,14 +16,35 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+h1{
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+input{
+  @apply bg-gray-100;
+  border: 2px solid black;
+  border-radius: 5px;
+
+
+}
+button{
+  @apply bg-neutral-900;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  
 }
 
 @layer utilities {
